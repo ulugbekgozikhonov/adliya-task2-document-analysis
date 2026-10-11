@@ -1,0 +1,77 @@
+{
+  "NAMUNA_1_abzats": {
+    "requisites": {"sender": "Huquqiy xizmatlarni raqamlashtirish milliy agentligi kengashi", "number": "121", "date": "2026-02-10", "signer": "M. Tursunov"},
+    "control": "Agentlik direktorining birinchi o'rinbosari",
+    "tasks": [
+      {"content": "Ro'yxatga olish departamenti yuridik shaxslarni", "executor": "Ro'yxatga olish departamenti", "deadline_type": "nisbiy", "deadline_date": "2026-03-10"},
+      {"content": "Axborot texnologiyalari boshqarmasi Ro'yxatga olish", "executor": "Axborot texnologiyalari boshqarmasi, Ro'yxatga olish departamenti", "deadline_type": "sana", "deadline_date": "2026-07-01"},
+      {"content": "Huquqiy ekspertiza boshqarmasi", "executor": "Huquqiy ekspertiza boshqarmasi", "deadline_type": "nisbiy", "deadline_date": "2026-03-10"},
+      {"content": "Hududiy bo'linmalar yangi tartib", "executor": "Hududiy bo'linmalar", "deadline_type": "boshlanish", "deadline_date": "2026-03-15"},
+      {"content": "Ro'yxatga olish departamenti mazkur qaror", "executor": "Ro'yxatga olish departamenti", "deadline_type": "davriy", "deadline_date": ""}
+    ]
+  },
+  "NAMUNA_2_jadval": {
+    "requisites": {"sender": "Yuridik xizmatlar sifatini oshirish respublika komissiyasi", "number": "145", "date": "2026-02-24", "signer": "O. Saidov"},
+    "control": "Komissiya kotibiyati",
+    "tasks": [
+      {"content": "Axborot texnologiyalari boshqarmasi yuqoridagi", "executor": "Axborot texnologiyalari boshqarmasi", "deadline_type": "davriy", "deadline_date": ""},
+      {"content": "Murojaatlarni avtomatik tasniflash", "executor": "Axborot texnologiyalari boshqarmasi", "deadline_type": "sana", "deadline_date": "2026-05-01"},
+      {"content": "Elektron yuridik maslahat chatbotini", "executor": "Axborot texnologiyalari boshqarmasi, Yuridik xizmat ko'rsatish boshqarmasi", "deadline_type": "sana", "deadline_date": "2026-06-15"},
+      {"content": "Topshiriqlarni avtomatik taqsimlash", "executor": "Ish yuritish (devonxona) bo'limi", "deadline_type": "shartli", "deadline_date": ""},
+      {"content": "Xodimlar uchun o'quv seminarlarini", "executor": "Kadrlar boshqarmasi", "deadline_type": "davriy", "deadline_date": ""},
+      {"content": "Ma'lumotlar xavfsizligi talablariga", "executor": "Axborot xavfsizligi bo'linmasi", "deadline_type": "sana", "deadline_date": "2026-04-20"}
+    ]
+  },
+  "NAMUNA_3_ilova": {
+    "requisites": {"sender": "Notariat va FHDYO faoliyatini muvofiqlashtirish kengashi", "number": "160", "date": "2026-03-05", "signer": "G. Nazarova"},
+    "control": "Kengash raisining o'rinbosari",
+    "tasks": [
+      {"content": "Kengash kotibiyati ilova ijrosi", "executor": "Kengash kotibiyati", "deadline_type": "davriy", "deadline_date": ""},
+      {"content": "Notariat harakatlarini elektron", "executor": "Notariat boshqarmasi", "deadline_type": "sana", "deadline_date": "2026-06-01"},
+      {"content": "FHDYo yozuvlarini raqamli", "executor": "FHDYo boshqarmasi", "deadline_type": "sana", "deadline_date": "2026-08-01"},
+      {"content": "Elektron hujjatlarni tizimlararo", "executor": "Axborot texnologiyalari boshqarmasi", "deadline_type": "shartli", "deadline_date": ""},
+      {"content": "Hududiy bo'linmalar xodimlarini", "executor": "Kadrlar boshqarmasi, hududiy bo'linmalar", "deadline_type": "sana", "deadline_date": "2026-05-15"},
+      {"content": "Fuqarolar uchun qo'llanma", "executor": "Axborot xizmati", "deadline_type": "nisbiy", "deadline_date": "2026-04-05"}
+    ]
+  },
+  "xat_1_abzatsdagi_topshiriqlar": {
+    "requisites": {"sender": "Raqamli huquqiy xizmatlar agentligi", "number": "03-12/1456", "date": "2026-09-08", "signer": "Sh. Qodirov"},
+    "control": "",
+    "tasks": [
+      {"content": "Markazning Tizim tahlili bo'limi", "executor": "Tizim tahlili bo'limi", "deadline_type": "sana", "deadline_date": "2026-09-20"},
+      {"content": "Sun'iy intellekt laboratoriyasi portalga", "executor": "Sun'iy intellekt laboratoriyasi", "deadline_type": "sana", "deadline_date": "2026-10-01"},
+      {"content": "Axborot xavfsizligi bo'limi Sun'iy", "executor": "Axborot xavfsizligi bo'limi, Sun'iy intellekt laboratoriyasi", "deadline_type": "nisbiy", "deadline_date": "2026-09-18"},
+      {"content": "Dasturiy ta'minotni ishlab chiqish", "executor": "Dasturiy ta'minotni ishlab chiqish bo'limi", "deadline_type": "sana", "deadline_date": "2026-10-25"},
+      {"content": "Markaz yuqoridagi topshiriqlar", "executor": "Markaz", "deadline_type": "davriy", "deadline_date": ""},
+      {"content": "Shuningdek, ishlar natijalari", "executor": "Qabul qiluvchi tashkilot", "deadline_type": "sana", "deadline_date": "2026-11-05"},
+      {"content": "Topshiriqlar ijrosi uchun mas'ul", "executor": "Qabul qiluvchi tashkilot", "deadline_type": "nisbiy", "deadline_date": "2026-09-11"}
+    ]
+  },
+  "xat_2_jadvaldagi_topshiriqlar": {
+    "requisites": {"sender": "Yangi avlod raqamli yechimlar davlat unitar korxonasi", "number": "15/2-784", "date": "2026-09-11", "signer": "A. Yusupov"},
+    "control": "",
+    "tasks": [
+      {"content": "Bajarilgan ishlar bo'yicha umumlashtirilgan", "executor": "Loyiha koordinatori", "deadline_type": "yo'q", "deadline_date": ""},
+      {"content": "Murojaatlar portalidagi mavjud", "executor": "Tizim tahlili bo'limi", "deadline_type": "sana", "deadline_date": "2026-09-18"},
+      {"content": "Hujjatlardan topshiriq, muddat", "executor": "Sun'iy intellekt laboratoriyasi", "deadline_type": "sana", "deadline_date": "2026-09-30"},
+      {"content": "Topshiriqlarni tarkibiy bo'linmalarga", "executor": "Biznes-tahlil bo'limi, Kadrlar bo'limi", "deadline_type": "sana", "deadline_date": "2026-10-05"},
+      {"content": "AI modullarining mavjud", "executor": "Integratsiya bo'limi", "deadline_type": "shartli", "deadline_date": ""},
+      {"content": "Tajriba-sinov natijalarini baholash", "executor": "Loyiha guruhi", "deadline_type": "sana", "deadline_date": "2026-11-01"},
+      {"content": "Bajarilgan ishlar holati", "executor": "Loyiha koordinatori", "deadline_type": "davriy", "deadline_date": ""}
+    ]
+  },
+  "xat_3_ilovadagi_topshiriqlar": {
+    "requisites": {"sender": "Ma'lumotlar xavfsizligi va integratsiya agentligi", "number": "07-04/2219", "date": "2026-09-15", "signer": "D. Ergasheva"},
+    "control": "",
+    "tasks": [
+      {"content": "Ilovada ko'rsatilgan topshiriqlarning", "executor": "Qabul qiluvchi tashkilot", "deadline_type": "davriy", "deadline_date": ""},
+      {"content": "Ichki axborot tizimlarida", "executor": "Tizim tahlili bo'limi", "deadline_type": "sana", "deadline_date": "2026-09-20"},
+      {"content": "Tanlangan jarayonlar uchun", "executor": "Ma'lumotlar bazalarini boshqarish bo'limi", "deadline_type": "sana", "deadline_date": "2026-09-30"},
+      {"content": "Topshiriqlarni avtomatik aniqlash", "executor": "Sun'iy intellekt laboratoriyasi, Dasturiy ta'minotni ishlab chiqish bo'limi", "deadline_type": "sana", "deadline_date": "2026-10-15"},
+      {"content": "Taqsimlash modulida", "executor": "Biznes-tahlil bo'limi", "deadline_type": "sana", "deadline_date": "2026-10-25"},
+      {"content": "Modullarning axborot xavfsizligi", "executor": "Axborot xavfsizligi bo'limi", "deadline_type": "shartli", "deadline_date": ""},
+      {"content": "Tajriba-sinov natijalarini tahlil", "executor": "Loyiha guruhi", "deadline_type": "sana", "deadline_date": "2026-11-10"},
+      {"content": "Xodimlarni yangi modullar", "executor": "Kadrlar bo'limi", "deadline_type": "doimiy", "deadline_date": ""}
+    ]
+  }
+}
