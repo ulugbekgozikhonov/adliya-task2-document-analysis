@@ -1,0 +1,101 @@
+{
+  "file": "xat_2_jadvaldagi_topshiriqlar_skaner.pdf",
+  "kind": "scan",
+  "doc_type": "xat",
+  "pages": 1,
+  "requisites": {
+    "sender": "Yangi avlod raqamli yechimlar davlat unitar korxonasi",
+    "number": "15/2-784",
+    "date": "2026-09-11",
+    "date_raw": "11.09.2026",
+    "signer": "A. Yusupov",
+    "signer_position": "Bosh direktor"
+  },
+  "control": "",
+  "tasks": [
+    {
+      "source": "abzats",
+      "number": "",
+      "content": "Bajarilgan ishlar bo'yicha umumlashtirilgan ma'lumot loyiha koordinatori orqali Korxonaning Raqamli loyihalar boshqarmasiga taqdim etilsin.",
+      "executor": "Loyiha koordinatori",
+      "deadline": {
+        "type": "yo'q",
+        "raw": "",
+        "date": ""
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "1",
+      "content": "Murojaatlar portalidagi mavjud klassifikatorlarni inventarizatsiya qilish va ularni takomillashtirish bo'yicha taklif tayyorlash",
+      "executor": "Tizim tahlili bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "18.09.2026",
+        "date": "2026-09-18"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "2",
+      "content": "Hujjatlardan topshiriq, muddat va ijrochi haqidagi ma'lumotlarni avtomatik ajratish bo'yicha prototip ishlab chiqish",
+      "executor": "Sun'iy intellekt laboratoriyasi",
+      "deadline": {
+        "type": "sana",
+        "raw": "30.09.2026",
+        "date": "2026-09-30"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "3",
+      "content": "Topshiriqlarni tarkibiy bo'linmalarga yo'naltirish uchun vakolatlar va tashkiliy tuzilma ma'lumotlarini shakllantirish",
+      "executor": "Biznes-tahlil bo'limi, Kadrlar bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 5-oktabr",
+        "date": "2026-10-05"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "4",
+      "content": "AI modullarining mavjud axborot tizimlari bilan integratsiyasi bo'yicha texnik talablarni tayyorlash",
+      "executor": "Integratsiya bo'limi",
+      "deadline": {
+        "type": "shartli",
+        "raw": "prototip tayyor bo'lgandan so'ng 15 kun ichida",
+        "date": ""
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "5",
+      "content": "Tajriba-sinov natijalarini baholash va aniqlangan kamchiliklar bo'yicha takliflar kiritish",
+      "executor": "Loyiha guruhi",
+      "deadline": {
+        "type": "sana",
+        "raw": "01.11.2026",
+        "date": "2026-11-01"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "6",
+      "content": "Bajarilgan ishlar holati to'g'risida qisqacha ma'lumot taqdim etish",
+      "executor": "Loyiha koordinatori",
+      "deadline": {
+        "type": "davriy",
+        "raw": "har haftaning juma kuni",
+        "date": ""
+      },
+      "result": ""
+    }
+  ]
+}

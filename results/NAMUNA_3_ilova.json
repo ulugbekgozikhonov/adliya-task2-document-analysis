@@ -1,0 +1,89 @@
+{
+  "file": "NAMUNA_3_ilova.pdf",
+  "kind": "text",
+  "doc_type": "qaror",
+  "pages": 2,
+  "requisites": {
+    "sender": "Notariat va FHDYO faoliyatini muvofiqlashtirish kengashi",
+    "number": "160",
+    "date": "2026-03-05",
+    "date_raw": "2026-yil 5-mart",
+    "signer": "G. Nazarova",
+    "signer_position": "Kengash raisi"
+  },
+  "control": "Kengash raisining o'rinbosari",
+  "tasks": [
+    {
+      "source": "abzats",
+      "number": "3",
+      "content": "Kengash kotibiyati ilova ijrosi to'g'risida har chorakda Kengash yig'ilishiga axborot kiritib borsin.",
+      "executor": "Kengash kotibiyati",
+      "deadline": {
+        "type": "davriy",
+        "raw": "har chorakda",
+        "date": ""
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "1",
+      "content": "Notariat harakatlarini elektron qayd etish modulini joriy etish",
+      "executor": "Notariat boshqarmasi",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 1-iyun",
+        "date": "2026-06-01"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "2",
+      "content": "FHDYo yozuvlarini raqamli arxivga o'tkazish",
+      "executor": "FHDYo boshqarmasi",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 1-avgust",
+        "date": "2026-08-01"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "3",
+      "content": "Elektron hujjatlarni tizimlararo almashish integratsiyasini ta'minlash",
+      "executor": "Axborot texnologiyalari boshqarmasi",
+      "deadline": {
+        "type": "shartli",
+        "raw": "texnik topshiriq tasdiqlangandan so'ng 3 oy ichida",
+        "date": ""
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "4",
+      "content": "Hududiy bo'linmalar xodimlarini yangi tizimda ishlashga o'qitish",
+      "executor": "Kadrlar boshqarmasi, hududiy bo'linmalar",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 15-may",
+        "date": "2026-05-15"
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "5",
+      "content": "Fuqarolar uchun qo'llanma va axborot materiallarini tayyorlash",
+      "executor": "Axborot xizmati",
+      "deadline": {
+        "type": "nisbiy",
+        "raw": "bir oy muddatda",
+        "date": "2026-04-05"
+      },
+      "result": ""
+    }
+  ]
+}

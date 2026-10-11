@@ -1,0 +1,113 @@
+{
+  "file": "xat_3_ilovadagi_topshiriqlar.pdf",
+  "kind": "text",
+  "doc_type": "xat",
+  "pages": 2,
+  "requisites": {
+    "sender": "Ma'lumotlar xavfsizligi va integratsiya agentligi",
+    "number": "07-04/2219",
+    "date": "2026-09-15",
+    "date_raw": "15.09.2026",
+    "signer": "D. Ergasheva",
+    "signer_position": "Direktor"
+  },
+  "control": "",
+  "tasks": [
+    {
+      "source": "abzats",
+      "number": "",
+      "content": "Ilovada ko'rsatilgan topshiriqlarning o'z vaqtida va sifatli bajarilishini ta'minlash hamda ijro holati to'g'risida har oyning 25-sanasiga qadar Agentlikka axborot kiritib borishingizni so'raymiz.",
+      "executor": "Qabul qiluvchi tashkilot",
+      "deadline": {
+        "type": "davriy",
+        "raw": "har oyning 25-sanasiga qadar",
+        "date": ""
+      },
+      "result": ""
+    },
+    {
+      "source": "jadval",
+      "number": "1",
+      "content": "Ichki axborot tizimlarida sun'iy intellekt qo'llash mumkin bo'lgan jarayonlarni aniqlash",
+      "executor": "Tizim tahlili bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "20.09.2026",
+        "date": "2026-09-20"
+      },
+      "result": "Jarayonlar ro'yxati"
+    },
+    {
+      "source": "jadval",
+      "number": "2",
+      "content": "Tanlangan jarayonlar uchun zarur ma'lumotlar manbalarini inventarizatsiya qilish",
+      "executor": "Ma'lumotlar bazalarini boshqarish bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "30.09.2026",
+        "date": "2026-09-30"
+      },
+      "result": "Ma'lumotlar reyestri"
+    },
+    {
+      "source": "jadval",
+      "number": "3",
+      "content": "Topshiriqlarni avtomatik aniqlash va atributlarini ajratish modulining tajriba-sinov variantini ishlab chiqish",
+      "executor": "Sun'iy intellekt laboratoriyasi, Dasturiy ta'minotni ishlab chiqish bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 15-oktabr",
+        "date": "2026-10-15"
+      },
+      "result": "Ishchi prototip"
+    },
+    {
+      "source": "jadval",
+      "number": "4",
+      "content": "Taqsimlash modulida foydalaniladigan tarkibiy bo'linmalar vakolatlari bazasini shakllantirish",
+      "executor": "Biznes-tahlil bo'limi",
+      "deadline": {
+        "type": "sana",
+        "raw": "25.10.2026",
+        "date": "2026-10-25"
+      },
+      "result": "Vakolatlar bazasi"
+    },
+    {
+      "source": "jadval",
+      "number": "5",
+      "content": "Modullarning axborot xavfsizligi talablariga muvofiqligini tekshirish",
+      "executor": "Axborot xavfsizligi bo'limi",
+      "deadline": {
+        "type": "shartli",
+        "raw": "prototip tayyor bo'lgandan so'ng 10 kun ichida",
+        "date": ""
+      },
+      "result": "Xulosa"
+    },
+    {
+      "source": "jadval",
+      "number": "6",
+      "content": "Tajriba-sinov natijalarini tahlil qilib, keyingi joriy etish bosqichi bo'yicha takliflar tayyorlash",
+      "executor": "Loyiha guruhi",
+      "deadline": {
+        "type": "sana",
+        "raw": "10.11.2026",
+        "date": "2026-11-10"
+      },
+      "result": "Tahliliy ma'lumot"
+    },
+    {
+      "source": "jadval",
+      "number": "7",
+      "content": "Xodimlarni yangi modullar bilan ishlashga o'qitish",
+      "executor": "Kadrlar bo'limi",
+      "deadline": {
+        "type": "doimiy",
+        "raw": "doimiy",
+        "date": ""
+      },
+      "result": "O'quv seminarlari"
+    }
+  ]
+}

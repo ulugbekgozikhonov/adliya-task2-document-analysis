@@ -1,0 +1,77 @@
+{
+  "file": "NAMUNA_1_abzats.pdf",
+  "kind": "text",
+  "doc_type": "qaror",
+  "pages": 1,
+  "requisites": {
+    "sender": "Huquqiy xizmatlarni raqamlashtirish milliy agentligi kengashi",
+    "number": "121",
+    "date": "2026-02-10",
+    "date_raw": "2026-yil 10-fevral",
+    "signer": "M. Tursunov",
+    "signer_position": "Kengash raisi"
+  },
+  "control": "Agentlik direktorining birinchi o'rinbosari",
+  "tasks": [
+    {
+      "source": "abzats",
+      "number": "1",
+      "content": "Ro'yxatga olish departamenti yuridik shaxslarni ro'yxatdan o'tkazish tartibini soddalashtirishni nazarda tutuvchi hujjat loyihasini bir oy muddatda ishlab chiqsin va Kengash muhokamasiga kiritsin.",
+      "executor": "Ro'yxatga olish departamenti",
+      "deadline": {
+        "type": "nisbiy",
+        "raw": "bir oy muddatda",
+        "date": "2026-03-10"
+      },
+      "result": ""
+    },
+    {
+      "source": "abzats",
+      "number": "2",
+      "content": "Axborot texnologiyalari boshqarmasi Ro'yxatga olish departamenti bilan birgalikda ro'yxatdan o'tkazish axborot tizimining yagona interaktiv davlat xizmatlari portali bilan integratsiyasini 2026-yil 1-iyulga qadar ta'minlasin.",
+      "executor": "Axborot texnologiyalari boshqarmasi, Ro'yxatga olish departamenti",
+      "deadline": {
+        "type": "sana",
+        "raw": "2026-yil 1-iyulga",
+        "date": "2026-07-01"
+      },
+      "result": ""
+    },
+    {
+      "source": "abzats",
+      "number": "3",
+      "content": "Huquqiy ekspertiza boshqarmasi ro'yxatdan o'tkazishda taqdim etiladigan hujjatlarni avtomatik tekshirish modulini joriy etish yuzasidan takliflar tayyorlasin.",
+      "executor": "Huquqiy ekspertiza boshqarmasi",
+      "deadline": {
+        "type": "nisbiy",
+        "raw": "bir oy muddatda (umumiy qoida)",
+        "date": "2026-03-10"
+      },
+      "result": ""
+    },
+    {
+      "source": "abzats",
+      "number": "4",
+      "content": "Hududiy bo'linmalar yangi tartib bo'yicha amaliy qo'llanmani tarqatish va aholiga tushuntirish ishlarini 2026-yil 15-martdan boshlab tashkil etsin.",
+      "executor": "Hududiy bo'linmalar",
+      "deadline": {
+        "type": "boshlanish",
+        "raw": "2026-yil 15-martdan boshlab",
+        "date": "2026-03-15"
+      },
+      "result": ""
+    },
+    {
+      "source": "abzats",
+      "number": "5",
+      "content": "Ro'yxatga olish departamenti mazkur qaror ijrosi to'g'risida har oyda Kengashga ma'lumot berib borsin.",
+      "executor": "Ro'yxatga olish departamenti",
+      "deadline": {
+        "type": "davriy",
+        "raw": "har oyda",
+        "date": ""
+      },
+      "result": ""
+    }
+  ]
+}
