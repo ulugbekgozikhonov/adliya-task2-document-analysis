@@ -144,7 +144,11 @@ def main() -> None:
         "",
         "## Xatolar",
         "",
-        *(md_table(["Hujjat", "Nima", "Kutilgan", "Topildi"], errors) if errors else ["Xato yo'q."]),
+        *(
+            md_table(["Hujjat", "Nima", "Kutilgan", "Topildi"], errors)
+            if errors
+            else ["Xato yo'q."]
+        ),
     ]
     text = "\n".join(md) + "\n"
     print(text)

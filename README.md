@@ -182,7 +182,7 @@ to'g'ri javob ikkala nusxa uchun ishlatiladi. To'liq hisobot: [reports/eval_repo
 hujjatlarida natija pastroq bo'lishi kutiladi. Ishonchli baho uchun mustaqil hujjatlar
 to'plami kerak.
 
-**Tezlik** (CPU, GPU'siz): matnli PDF ~0.1 s; skaner 2-9 s (OCR har bir katakni alohida o'qiydi).
+**Tezlik** (CPU, GPU'siz): matnli PDF ~0.1 s; skaner 2-12 s (OCR har bir katakni alohida o'qiydi).
 
 ---
 
