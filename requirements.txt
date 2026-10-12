@@ -4,3 +4,6 @@ opencv-python-headless==5.0.0.93
 pytesseract==0.3.13
 numpy==2.5.4
 pydantic-settings==2.15.0
+fastapi==0.143.0
+uvicorn==0.54.0
+python-multipart==0.0.32

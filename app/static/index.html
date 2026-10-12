@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hujjat tahlili</title>
+<style>
+  :root { --bg: #f5f6f8; --card: #fff; --text: #1d2330; --muted: #6b7280; --line: #e5e7eb;
+          --accent: #1f6feb; --ok: #157347; --warn: #b26a00; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.5; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 20px; margin-bottom: 20px; }
+  form { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  input[type=file] { flex: 1; min-width: 240px; padding: 10px; border: 1px dashed #c7ccd4;
+                     border-radius: 8px; background: #fafbfc; }
+  button { background: var(--accent); color: #fff; border: 0; border-radius: 8px;
+           padding: 11px 22px; font-size: 15px; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+  .status { margin-top: 12px; color: var(--muted); min-height: 1.5em; }
+  .error { color: #b42318; }
+  h2 { font-size: 17px; margin: 0 0 14px; }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tag { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: #eef2f7; color: #374151; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; background: #fafbfc; }
+  .req th { width: 200px; background: none; }
+  .num { width: 40px; color: var(--muted); }
+  .deadline b { display: block; }
+  .dtype { font-size: 12px; padding: 2px 8px; border-radius: 999px; display: inline-block; margin-top: 2px; }
+  .t-sana, .t-nisbiy { background: #e7f5ec; color: var(--ok); }
+  .t-davriy, .t-boshlanish, .t-doimiy { background: #e8f0fe; color: var(--accent); }
+  .t-shartli, .t-yoq { background: #fff4e5; color: var(--warn); }
+  .raw { color: var(--muted); font-size: 12px; }
+  .src { font-size: 12px; color: var(--muted); }
+  .hidden { display: none; }
+  @media (max-width: 700px) { th.hide-sm, td.hide-sm { display: none; } .req th { width: 120px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hujjat tahlili</h1>
+  <p class="sub">PDF hujjatdan rekvizitlar va topshiriqlarni ajratish. Hujjat tashqi xizmatlarga yuborilmaydi.</p>
+
+  <div class="card">
+    <form id="form">
+      <input type="file" id="file" accept="application/pdf,.pdf" required>
+      <button type="submit" id="btn">Tahlil qilish</button>
+    </form>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div id="result" class="hidden">
+    <div class="card">
+      <h2>Rekvizitlar</h2>
+      <div class="meta" id="meta"></div>
+      <table class="req"><tbody id="req"></tbody></table>
+    </div>
+    <div class="card">
+      <h2 id="tasks-title">Topshiriqlar</h2>
+      <table>
+        <thead><tr><th class="num">№</th><th>Topshiriq</th><th>Ijrochi</th><th>Muddat</th>
+          <th class="hide-sm">Manba</th></tr></thead>
+        <tbody id="tasks"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script>
+const LABELS = { sana: "aniq sana", nisbiy: "hujjat sanasidan", shartli: "shartli",
+                 davriy: "davriy", boshlanish: "boshlanish", doimiy: "doimiy", "yo'q": "ko'rsatilmagan" };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtDate = (iso) => (iso ? iso.split("-").reverse().join(".") : "");
+
+function deadlineCell(d) {
+  const cls = "t-" + d.type.replace("'", "");
+  const date = d.date ? `<b>${fmtDate(d.date)}</b>` : "";
+  const raw = d.raw && d.type !== "sana" ? `<div class="raw">${esc(d.raw)}</div>` : "";
+  return `${date}<span class="dtype ${cls}">${LABELS[d.type] ?? d.type}</span>${raw}`;
+}
+
+function render(r) {
+  const q = r.requisites;
+  $("meta").innerHTML = [
+    r.doc_type === "qaror" ? "Qaror" : "Xat",
+    r.kind === "scan" ? "Skaner (OCR)" : "Matnli PDF",
+    `${r.pages} sahifa`,
+    `${r.seconds} s`,
+  ].map((t) => `<span class="tag">${esc(t)}</span>`).join("");
+  const rows = [
+    ["Jo'natuvchi tashkilot", q.sender],
+    ["Hujjat raqami", q.number],
+    ["Sana", fmtDate(q.date) || q.date_raw],
+    ["Imzolagan shaxs", [q.signer_position, q.signer].filter(Boolean).join(" ")],
+  ];
+  if (r.control) rows.push(["Nazorat", r.control]);
+  $("req").innerHTML = rows.map(([k, v]) => `<tr><th>${k}</th><td>${esc(v) || "—"}</td></tr>`).join("");
+
+  $("tasks-title").textContent = `Topshiriqlar (${r.tasks.length})`;
+  $("tasks").innerHTML = r.tasks.map((t, i) => `
+    <tr>
+      <td class="num">${esc(t.number || i + 1)}</td>
+      <td>${esc(t.content)}${t.result ? `<div class="raw">Natija: ${esc(t.result)}</div>` : ""}</td>
+      <td>${esc(t.executor) || "—"}</td>
+      <td class="deadline">${deadlineCell(t.deadline)}</td>
+      <td class="hide-sm src">${t.source === "jadval" ? "jadval" : "matn"}</td>
+    </tr>`).join("") || `<tr><td colspan="5">Topshiriq topilmadi</td></tr>`;
+  $("result").classList.remove("hidden");
+}
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const file = $("file").files[0];
+  if (!file) return;
+  $("btn").disabled = true;
+  $("status").className = "status";
+  $("status").textContent = "Tahlil qilinmoqda... Skaner hujjatda OCR bir necha soniya oladi.";
+  const body = new FormData();
+  body.append("file", file);
+  try {
+    const resp = await fetch("/api/analyze", { method: "POST", body });
+    const data = await resp.json();
+    if (!resp.ok) throw new Error(data.detail || "Xatolik yuz berdi");
+    render(data);
+    $("status").textContent = "";
+  } catch (err) {
+    $("status").className = "status error";
+    $("status").textContent = err.message;
+  } finally {
+    $("btn").disabled = false;
+  }
+});
+</script>
+</body>
+</html>
